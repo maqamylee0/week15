@@ -29,8 +29,16 @@ class Billing extends StatelessWidget {
           height:MediaQuery.of(context).size.height,
 
           child:Container(
+
             decoration:  BoxDecoration(
-                color: Colors.purple[200],
+                gradient:  const LinearGradient(
+                  colors: [Colors.purple, Colors.purpleAccent],
+                  begin: Alignment.bottomLeft,
+                  end: Alignment.topRight,
+                  stops: [0.4, 0.7],
+                  tileMode: TileMode.repeated,
+                ),
+                color: Colors.purple[100],
                 borderRadius: BorderRadius.all(Radius.circular(14))
             ),
             child: Column(
