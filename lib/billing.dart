@@ -14,7 +14,7 @@ class Billing extends StatelessWidget {
           children: [
             Container(
               height: MediaQuery.of(context).size.height*0.5,
-              color:Colors.purple ,
+              color:Colors.purple.shade400 ,
             ),
             Container(
               height: MediaQuery.of(context).size.height*0.5,
@@ -31,8 +31,8 @@ class Billing extends StatelessWidget {
           child:Container(
 
             decoration:  BoxDecoration(
-                gradient:  const LinearGradient(
-                  colors: [Colors.purple, Colors.purpleAccent],
+                gradient:   LinearGradient(
+                  colors: [Colors.purple.shade400, Colors.purple.shade200],
                   begin: Alignment.bottomLeft,
                   end: Alignment.topRight,
                   stops: [0.4, 0.7],
@@ -45,7 +45,7 @@ class Billing extends StatelessWidget {
               children: [
                 Container(
                   padding: const EdgeInsets.fromLTRB(40, 20, 40, 20),
-                  child: const Icon(Icons.place_sharp,size: 60,color: Colors.white,),
+                  child: const Icon(Icons.monetization_on_rounded,size: 60,color: Colors.white,),
                 ),
                 Container(
                   child: const Text('\$09.99'  ,style: TextStyle(fontSize: 30,color: Colors.white,
@@ -56,7 +56,7 @@ class Billing extends StatelessWidget {
                   child: const Text("per month",style: TextStyle(fontSize: 12,
                       color: Colors.white,decoration:TextDecoration.none ),),
                 ),
-                 Divider(
+                Divider(
                   indent: 20,
                   endIndent: 20,
                   thickness: 5,
