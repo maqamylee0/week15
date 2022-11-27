@@ -40,7 +40,20 @@ class Billing extends StatelessWidget {
                       fontWeight: FontWeight.bold,decoration:TextDecoration.none ),),
                 ),
                 Container(
-                  child: Text("per month",style: TextStyle(fontSize: 15,color: Colors.white,decoration:TextDecoration.none ),),
+                  padding: EdgeInsets.all(20),
+                  child: const Text("per month",style: TextStyle(fontSize: 12,
+                      color: Colors.white,decoration:TextDecoration.none ),),
+                ),
+                 Divider(
+                  indent: 20,
+                  endIndent: 20,
+                  thickness: 5,
+                  color: Colors.pink[300],
+                ),
+                Container(
+                  padding: EdgeInsets.all(30),
+                  child: const Text("START UP",style: TextStyle(color: Colors.white,
+                      fontSize: 33,decoration: TextDecoration.none),),
                 )
               ],
             ),
